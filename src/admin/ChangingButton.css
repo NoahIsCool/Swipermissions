@@ -1,0 +1,78 @@
+.greenButton{
+    background-color: green !important;
+    width: 100%;
+    color: white;
+  }
+  
+.redButton{
+   background-color: red !important;
+   width: 100%;
+   color: black;
+  }
+
+
+.Login {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0, 0.5);
+
+}
+.Login_inner {
+  z-index: 1000; 
+  left: 40%;
+  right: 40%;
+  top: 25%;
+  bottom: 55%;
+
+  background: lightblue;
+  color: red;
+  border: solid rgb(63, 63, 248) 3px;
+}
+
+.Close_bar
+{
+  width: 100%;
+  float: top;
+  display: block;
+}
+
+.closer
+{
+  float: top;
+  border: solid red 1px;
+  color: red;
+  margin: 0px;
+}
+
+.SignIn
+{
+  color: black;
+  margin-top: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.SignForm
+{
+  margin-top: 40px;
+}
+
+.UserBar
+{
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+.PasswordBar
+{
+  margin-bottom: 20px;
+  display: block;
+}

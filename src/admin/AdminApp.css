@@ -1,0 +1,88 @@
+.html{
+    overflow: hidden;
+    height: 100%;
+}
+
+.body{
+    overflow: hidden;
+    height: 100%;
+}
+
+.Wrapper
+{
+    height: 100%;
+    display: inline;
+    overflow-y: hidden;
+}
+
+.root{
+    overflow-y: hidden;
+}
+
+.StudentTable{
+    width: auto;
+    height: auto;
+    margin-left: 5%;
+    bottom: 0;
+    overflow-y: auto;
+    float: left;
+
+    margin-right: 5%;
+}
+
+.ST{
+    overflow-y: auto;
+}
+
+.MT{
+    position: absolute;
+    float: right;
+}
+
+.MachineTable{
+    grid-column: 3;
+    grid-row: 1;
+    border: 0;
+    margin-left: 0%;
+    left: 25%;
+    float: left;
+}
+
+.MuiTableCell-root-151
+{
+    border: 0;
+}
+
+.LogTable{
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    float: right;
+    margin-top: 25%;
+
+}
+
+.Banner{
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    height: auto;
+    grid-row: 1;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.MatTable
+{
+    font-size: 8px;
+}
+
+.Top{
+
+    margin-top: 50px;
+    background-color: wheat;
+    max-height: 70% !important;
+    width: 100%;
+    display: inline-block;
+}

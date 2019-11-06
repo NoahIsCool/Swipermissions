@@ -3,6 +3,9 @@
 }
 
 .TopContainer {
+  grid-row: 1;
+  grid-column: 1 / 2;
+  margin-left: 25%;
   text-align: center;
   position: relative;
   top: 0px;
@@ -12,38 +15,39 @@
 
 .BottomContainer 
 {
-  background-color: wheat;
-  bottom: 0;
+  grid-row: 1;
+  grid-column: 1;
+  margin-top: 50px;
+  margin-left: 5%;
   
+}
+
+.MatTable
+{
+  width: 80%;
+}
+
+.Right
+{
+  margin-top: 50px;
+  grid-column: 2;
 }
 
 .Wrapper
 {
-  height: 100%
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(200px, auto);
 }
 
 .Title {
-  display: inline-block;
-  text-align: center;
-  width: 60%;
   font-size: 2em;
   font-weight: bold;
-}
+  background-color: darkred;
+  width: 100%;
+  color: white;
 
-.TopRight
-{
-  float: right;
-  width:20%;
-
-}
-
-.TopLeft
-{
-  float: left;
-
-  text-align: center;
-  width:20%;
 }
 
 .MainContainer {

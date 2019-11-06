@@ -3,8 +3,25 @@ import Table from './Table';
 import LoginButton from './LoginButton';
 import './App.css';
 
+
+function UserGreeting(props) {
+  return <h1>Welcome back!</h1>;
+}
+
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+
+function Greeting(props)
+{
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
+
 class Login extends React.Component {
-  
   constructor(props) {
     super(props);
     this.state = 
@@ -18,6 +35,9 @@ class Login extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+
+
 
   handleChangeUser(event) {
     this.setState({user: event.target.value});
@@ -53,6 +73,8 @@ class Login extends React.Component {
           <div className='Close_bar'>
             <button className ='closer' onClick={this.props.closePopup}>X</button>
           </div>
+          <Greeting isLoggedIn={this.state.password !== ''} />
+
           <div className ='SignIn'>
           Sign In
             <form className='SignForm' onSubmit={this.handleSubmit}>
@@ -82,7 +104,8 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      showPopup: false
+      showPopup: false, 
+      hasLoggedIn: false
     };
   }
   
